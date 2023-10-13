@@ -3,7 +3,6 @@ const app = express()
 // const mongoose = require('mongoose')
 const cors = require('cors')
 const bodyParser = require("body-parser");
-const users = require("./routes/users")
 const PORT = 4000
 const Note = require('./models/Note')
 const dbConnect = require("./config/database")

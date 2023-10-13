@@ -19,17 +19,7 @@ app.use(express.urlencoded({extended: false}))
 
 
 dbConnect();
-//Connect to mongodb
-// mongoose.connect('mongodb://0.0.0.0:27017/reactNote', {
-//     useNewUrlParser: true, useUnifiedTopology: true
-// }).then(()=> console.log('DB connected')).catch(err=> console.log(err))
 
-// Passport middleware
-app.use(passport.initialize());
-// Passport config
-require("./config/passport")(passport);
-// Routes
-app.use("/users", users);
 
 
 // CREATE 
